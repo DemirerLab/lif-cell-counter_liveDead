@@ -1,0 +1,36 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Data / output (don't commit results or raw .lif files)
+*.lif
+*.xlsx
+*.xls
+*.zip
+previews/
+*_previews*/
+*_counts*.xlsx
+
+# Editors
+.vscode/
+.idea/
+
+# macOS
+.DS_Store

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lif-cell-counter"
+version = "0.1.0"
+description = "Count live and dead Arabidopsis cells from Leica .lif confocal microscopy files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Demirer Lab"}]
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.24",
+  "openpyxl>=3.1",
+  "pandas>=2.0",
+  "readlif>=0.6",
+  "scikit-image>=0.22",
+  "scipy>=1.10"
+]
+
+[project.scripts]
+lif-cell-counter = "lif_cell_counter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
